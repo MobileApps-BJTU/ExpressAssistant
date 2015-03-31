@@ -11,7 +11,7 @@ import android.widget.Button;
 /**
  * Created by Chen Jixuan on 2015/3/29.
  */
-public class HomePageCustomer extends ActionBarActivity{
+public class HomePageCustomer extends ActionBarActivity implements TransactionHistory.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -25,8 +25,24 @@ public class HomePageCustomer extends ActionBarActivity{
                 startActivity(new Intent("android.intent.action.PackageInformationList"));
             }
         });
+
+        final Button totransactionhistory=(Button)findViewById(R.id.toTransactionHistory);
+        totransactionhistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction()
+                        .add(R.id.fragmentContainer, new TransactionHistory()).commit();
+            }
+        });
+
     }
 
+    public void sendPositionToFragment2(int itemNum) {
+        getFragmentManager().beginTransaction()
+                .replace(R.id.fragmentContainer, HistoryDetail.newInstance(itemNum))
+                .addToBackStack(null)
+                .commit();
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

@@ -32,6 +32,10 @@ public class PackageOperationPanel extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    private OnFragmentInteractionListener mListener1;
+
+    private int flag=0;
+    private int flag1=0;
 
 
 
@@ -89,9 +93,10 @@ public class PackageOperationPanel extends Fragment {
         final Button packagelocation=(Button)getActivity().findViewById(R.id.PackageLocation);
         packageinfo.setOnClickListener(new View.OnClickListener() {
             @Override
-            public  void onClick(View v) {
+            public void onClick(View v) {
                 if (mListener != null) {
                     mListener.sendFlagToFragment2(1);
+                    //flag=1;
                 }
             }
         });
@@ -101,6 +106,7 @@ public class PackageOperationPanel extends Fragment {
             public void onClick(View v) {
                 if (mListener != null) {
                     mListener.sendFlagToFragment3(1);
+                    flag1=1;
                 }
             }
         });
@@ -109,12 +115,23 @@ public class PackageOperationPanel extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        try {
-            mListener = (OnFragmentInteractionListener) activity;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
+        //if(flag==0) {
+            try {
+                mListener = (OnFragmentInteractionListener) activity;
+            } catch (ClassCastException e) {
+                throw new ClassCastException(activity.toString()
+                        + " must implement OnFragmentInteractionListener");
+            }
+       /* }
+
+        if(flag1==1) {
+            try {
+                mListener1 = (OnFragmentInteractionListener) activity;
+            } catch (ClassCastException e) {
+                throw new ClassCastException(activity.toString()
+                        + " must implement OnFragmentInteractionListener");
+            }
+        }*/
     }
 
     @Override

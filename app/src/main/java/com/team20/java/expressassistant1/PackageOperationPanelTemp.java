@@ -11,6 +11,8 @@ import android.view.MenuItem;
 /**
  * Created by Chen Jixuan on 2015/3/29.
  */
+
+//This activity is a temporary platform to maintain the transaction between several fragments
 public class PackageOperationPanelTemp extends ActionBarActivity implements PackageOperationPanel.OnFragmentInteractionListener {
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -40,11 +42,13 @@ public class PackageOperationPanelTemp extends ActionBarActivity implements Pack
     }
 
     public void sendFlagToFragment3(int flag3) {
-        if(flag3==1){
+        if (flag3 == 1) {
             getFragmentManager().beginTransaction()
                     .add(R.id.fragmentContainer, new PackageLocation()).commit();
         }
     }
+
+
 
     public void onFragmentInteraction(Uri uri){
 
