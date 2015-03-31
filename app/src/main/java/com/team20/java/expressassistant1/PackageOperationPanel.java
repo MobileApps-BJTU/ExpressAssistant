@@ -17,6 +17,7 @@ import android.widget.Button;
  * Use the {@link PackageOperationPanel#newInstance} factory method to
  * create an instance of this fragment.
  */
+
 public class PackageOperationPanel extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +29,6 @@ public class PackageOperationPanel extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
-    private OnFragmentInteractionListener mListener1;
 
     //private int flag=0;
     //private int flag1=0;

@@ -30,7 +30,8 @@ public class PackageLocation extends Fragment {
     private String mParam2;
 
 
-    private String urlString="http://www.baidu.com";
+    private String urlString="http://www.baidu.com";//Due to some reason the map page could not be loaded
+                                                          // ,so here we use a normal page
     private WebView webView;
     private OnFragmentInteractionListener mListener;
 
