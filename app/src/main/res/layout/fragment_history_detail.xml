@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:textSize="16dp"
         android:gravity="center"
-        android:text="Here will be filled with the detail of history"
+        android:text="@string/Unfinished_Hint"
         android:background="@android:color/holo_blue_bright"/>
 
 </FrameLayout>

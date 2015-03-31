@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="YOUR PACKAGE"
+        android:text="@string/YOUR_PACKAGE"
         android:textSize="24dp"
         android:id="@+id/PanelTitle"
         android:layout_alignParentTop="true"
@@ -53,7 +53,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detail Info"
+        android:text="@string/Detail_Info"
         android:id="@+id/DetailInfo"
         android:layout_below="@+id/BriefDescription"
         android:layout_alignLeft="@+id/BriefDescription"
@@ -64,7 +64,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Package Location"
+        android:text="@string/Package_Location"
         android:id="@+id/PackageLocation"
         android:width="170dp"
         android:layout_alignTop="@+id/DetailInfo"
@@ -74,7 +74,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deliverer Information"
+        android:text="@string/Deliverer_Information"
         android:id="@+id/DelivererInformation"
         android:width="170dp"
         android:layout_below="@+id/DetailInfo"
@@ -84,7 +84,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Abandon Transaction"
+        android:text="@string/Abandon_Transaction"
         android:id="@+id/AbandonTransaction"
         android:width="170dp"
         android:layout_alignTop="@+id/DelivererInformation"
@@ -96,7 +96,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirm Receiving"
+        android:text="@string/Confirm_Receiving"
         android:id="@+id/ConfirmReceiving"
         android:width="170dp"
         android:layout_below="@+id/DelivererInformation"
@@ -106,7 +106,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="@string/Back"
         android:id="@+id/Back"
         android:width="170dp"
         android:layout_below="@+id/AbandonTransaction"

@@ -46,7 +46,7 @@
             android:textSize="20dp"
             android:background="@android:color/holo_purple"
             android:gravity="center_horizontal"
-            android:text="Current Location:BJTU" />
+            android:text="@string/Current_Location" />
 
         <WebView
             android:id="@+id/webView"
