@@ -34,8 +34,8 @@ public class PackageOperationPanel extends Fragment {
     private OnFragmentInteractionListener mListener;
     private OnFragmentInteractionListener mListener1;
 
-    private int flag=0;
-    private int flag1=0;
+    //private int flag=0;
+    //private int flag1=0;
 
 
 
@@ -91,6 +91,8 @@ public class PackageOperationPanel extends Fragment {
 
         final Button packageinfo=(Button)getActivity().findViewById(R.id.DetailInfo);
         final Button packagelocation=(Button)getActivity().findViewById(R.id.PackageLocation);
+
+        final Button endtransaction=(Button)getActivity().findViewById(R.id.AbandonTransaction);
         packageinfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,7 +108,17 @@ public class PackageOperationPanel extends Fragment {
             public void onClick(View v) {
                 if (mListener != null) {
                     mListener.sendFlagToFragment3(1);
-                    flag1=1;
+                   // flag1=1;
+                }
+            }
+        });
+
+        endtransaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mListener != null) {
+                    mListener.sendFlagToFragment5(1);
+                    //flag1=1;
                 }
             }
         });
@@ -157,6 +169,7 @@ public class PackageOperationPanel extends Fragment {
         // TODO: Update argument type and name
         public void sendFlagToFragment2(int flag2);
         public void sendFlagToFragment3(int flag3);
+        public void sendFlagToFragment5(int flag5);
     }
 
 }

@@ -1,12 +1,15 @@
 package com.team20.java.expressassistant1;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -74,7 +77,7 @@ public class EndTransaction extends Fragment {
         }
     }
 
-    @Override
+    /*@Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         try {
@@ -89,7 +92,7 @@ public class EndTransaction extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
-    }
+    }*/
 
     /**
      * This interface must be implemented by activities that contain this

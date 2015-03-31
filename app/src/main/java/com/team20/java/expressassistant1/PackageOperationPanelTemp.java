@@ -48,6 +48,13 @@ public class PackageOperationPanelTemp extends ActionBarActivity implements Pack
         }
     }
 
+    public void sendFlagToFragment5(int flag5) {
+        if (flag5 == 1) {
+            getFragmentManager().beginTransaction()
+                    .add(R.id.fragmentContainer, new EndTransaction()).commit();
+        }
+    }
+
 
 
     public void onFragmentInteraction(Uri uri){

@@ -32,7 +32,7 @@
         android:textSize="20dp"
         android:text="Package Info"
         android:id="@+id/toPackageInfoList"
-        android:background="#606495ED"
+        android:background="#FF6495ED"
         />
 
     <Button
@@ -42,7 +42,7 @@
         android:layout_marginTop="15dp"
         android:text="Package Info List"
         android:id="@+id/toTransactionHistory"
-        android:background="#606495ED"
+        android:background="#FF6495ED"
         android:textSize="20dp" />
 
 
