@@ -41,6 +41,6 @@
             android:layout_alignParentBottom="true"
             android:layout_alignRight="@+id/textViewCancel"
             android:layout_alignEnd="@+id/textViewCancel"
-            android:text="BACK"></Button>
+            android:text="@string/Back"></Button>
     </RelativeLayout>
 </RelativeLayout>

@@ -1,6 +1,5 @@
 package com.team20.java.expressassistant1;
 
-import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -73,23 +72,6 @@ public class PackageDetailInfo extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
-
-    /*@Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        try {
-            mListener = (OnFragmentInteractionListener) activity;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }*/
 
     /**
      * This interface must be implemented by activities that contain this

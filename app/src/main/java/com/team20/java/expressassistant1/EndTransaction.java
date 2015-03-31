@@ -1,16 +1,11 @@
 package com.team20.java.expressassistant1;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
 
 /**
  * A simple {@link Fragment} subclass.
@@ -76,23 +71,6 @@ public class EndTransaction extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
-
-    /*@Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        try {
-            mListener = (OnFragmentInteractionListener) activity;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }*/
 
     /**
      * This interface must be implemented by activities that contain this
