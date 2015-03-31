@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+//This listfragment display the list simply.
 public class TransactionHistory extends ListFragment {
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

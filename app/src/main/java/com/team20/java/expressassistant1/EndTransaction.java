@@ -15,6 +15,8 @@ import android.view.ViewGroup;
  * Use the {@link EndTransaction#newInstance} factory method to
  * create an instance of this fragment.
  */
+
+//End Transaction implements only XML interface but not function
 public class EndTransaction extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

@@ -16,6 +16,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //We use a temporary button to turn to customer's Home page in order to prevent implementing
+        //register and login functions.
         final Button button=(Button)findViewById(R.id.button1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

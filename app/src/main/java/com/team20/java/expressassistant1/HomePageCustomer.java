@@ -26,6 +26,7 @@ public class HomePageCustomer extends ActionBarActivity implements TransactionHi
             }
         });
 
+        //Here is the listfragment which is used to display history transaction list
         final Button totransactionhistory=(Button)findViewById(R.id.toTransactionHistory);
         totransactionhistory.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +38,7 @@ public class HomePageCustomer extends ActionBarActivity implements TransactionHi
 
     }
 
+    //This is to implement the communication between fragments through activity
     public void sendPositionToFragment2(int itemNum) {
         getFragmentManager().beginTransaction()
                 .replace(R.id.fragmentContainer, HistoryDetail.newInstance(itemNum))
