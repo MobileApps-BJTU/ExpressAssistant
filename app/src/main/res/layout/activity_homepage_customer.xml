@@ -19,12 +19,10 @@
         android:layout_height="wrap_content"
         android:text="Customer Home Page"
         android:textSize="36dp"
-        android:layout_marginTop="325dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="10dp"
         android:textColor="@android:color/holo_purple"
-        android:textStyle="italic"        />
-
-
+        android:textStyle="italic"/>
 
     <Button
         android:layout_marginLeft="30dp"
