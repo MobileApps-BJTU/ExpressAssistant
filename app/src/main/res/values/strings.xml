@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ExpressAssistant1</string>
+    <string name="app_name">Express Assistant</string>
 
     <string name="hello_world">This is a temporary Home Page</string>
     <string name="action_settings">Settings</string>
@@ -23,6 +23,8 @@
     <string name="CustomerHomePage">Customer Home Page</string>
     <string name="Package_Info">Package Info</string>
     <string name="Package_Info_List">Package Info List</string>
+    <string name="hint_message">Query a package here</string>
+
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

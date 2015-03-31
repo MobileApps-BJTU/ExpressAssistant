@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|fill_horizontal"
             android:layout_weight="1"
-            android:hint="Query a package here"
+            android:hint="@string/hint_message"
             android:imeOptions="actionDone" />
 
         <ImageButton
