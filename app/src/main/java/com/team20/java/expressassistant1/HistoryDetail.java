@@ -47,7 +47,7 @@ public class HistoryDetail extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_history_detail, container, false);
         TextView textView2 = (TextView)view.findViewById(R.id.textView2);
-        textView2.setText("Item " + String.valueOf(itemNum) + " is clicked.");
+        textView2.setText("Here will be filled with the detail of history");
         return view;
     }
 

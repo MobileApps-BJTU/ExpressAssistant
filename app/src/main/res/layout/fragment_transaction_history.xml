@@ -4,25 +4,14 @@
     tools:context="com.example.administrator.list_fragment.FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/fragment1_textView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="32dp"
-        android:text="This is history list" />
+
 
 
     <ListView
         android:id="@id/android:list"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"></ListView>
+        android:layout_height="fill_parent"
+        android:background="@android:color/holo_green_light"></ListView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView"
-        android:layout_gravity="left|center_vertical" />
 
 </FrameLayout>
