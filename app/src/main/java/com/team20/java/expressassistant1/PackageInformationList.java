@@ -12,69 +12,70 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import static android.support.v4.app.ActivityCompat.startActivity;
 
 
 /**
  * Created by Chen Jixuan on 2015/3/29.
  */
 public class PackageInformationList extends ActionBarActivity{
-     protected void onCreate(Bundle savedInstanceState){
-         super.onCreate(savedInstanceState);
-         setContentView(R.layout.package_list);
-
-         ListView packagelist=(ListView)findViewById(R.id.packagelist);/*Correct this ID*/
 
 
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.package_list);
 
-         ArrayList<String> listData=new ArrayList<String>();
-         listData.add("Apples1");
-         listData.add("Apples2");
-         listData.add("Apples3");
-         listData.add("Apples4");
+        ListView packagelist=(ListView)findViewById(R.id.packagelist);/*Correct this ID*/
 
-         ArrayAdapter<String> listAdapter=
-                 new ArrayAdapter<String>(this,R.layout.package_list_item,R.id.NameOfPackage/*android.R.layout.simple_list_item_1*/,listData);
+        ArrayList<String> listData=new ArrayList<String>();
+        listData.add("Laptop Y#####");
+        listData.add("PC Y#####");
+        listData.add("iPhone 6 #######");
+        listData.add("Textbook #######");
 
-         packagelist.setAdapter(listAdapter);
+        ArrayAdapter<String> listAdapter=
+                new ArrayAdapter<String>(this,R.layout.package_list_item,R.id.NameOfPackage/*android.R.layout.simple_list_item_1*/,listData);
 
-         //temporarily turn to panel through this
-         final ImageButton temptrans=(ImageButton)findViewById(R.id.saveButton);
-         temptrans.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 startActivity(new Intent("android.intent.action.PackageOperationPanelTemp"));
-             }
-         });
+        packagelist.setAdapter(listAdapter);
+
+        //temporarily turn to panel through this
+        packagelist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position>=0){
+                    startActivity(new Intent("android.intent.action.PackageOperationPanelTemp"));
+                }}
+        });
 
 
-         packagelist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+         /*packagelist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
              @Override
              public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                  /*CheckBox checkbox=(CheckBox)view.findViewById(R.id.checkBox);
-                 checkbox.setChecked(!checkbox.isChecked());*/
+                 checkbox.setChecked(!checkbox.isChecked());
 
                  Button topackageoperationpanel=(Button)view.findViewById(R.id.toPackageOperationPanel);
-                 topackageoperationpanel.setText("Go");
 
-
-                 /*topackageoperationpanel.setOnClickListener(new View.OnClickListener() {
+                 topackageoperationpanel.setOnClickListener(new View.OnClickListener() {
                      @Override
                      public void onClick(View v) {
                          startActivity(new Intent("android.intent.action.PackageOperationPanelTemp"));
                      }
-                 });*/
+                 });
 
 
              }
-         });
+         });*/
 
-         //need to add package operation panel later (fragment)
+        //need to add package operation panel later (fragment)
 
-     }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -97,4 +98,6 @@ public class PackageInformationList extends ActionBarActivity{
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
