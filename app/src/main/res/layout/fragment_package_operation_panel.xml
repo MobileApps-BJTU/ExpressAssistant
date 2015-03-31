@@ -22,7 +22,7 @@
         android:id="@+id/PackageName"
         android:text="                  Laptop TYPE"
         android:textSize="24dp"
-        android:background="@drawable/p5"
+
         android:layout_below="@+id/PanelTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"

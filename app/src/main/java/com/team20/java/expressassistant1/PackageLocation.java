@@ -30,7 +30,7 @@ public class PackageLocation extends Fragment {
     private String mParam2;
 
 
-    private String urlString="http://map.baidu.com/";
+    private String urlString="http://www.baidu.com";
     private WebView webView;
     private OnFragmentInteractionListener mListener;
 
@@ -126,6 +126,14 @@ public class PackageLocation extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
+    }
+
+    public void onBackPressed(){
+        if(getFragmentManager().getBackStackEntryCount()>0){
+            getFragmentManager().popBackStack();
+        } else {
+            //super.onBackPressed();
+        }
     }
 
 }
