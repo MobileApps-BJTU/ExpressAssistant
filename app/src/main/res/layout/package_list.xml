@@ -33,14 +33,12 @@
             android:hint="Query a package here"
             android:imeOptions="actionDone" />
 
-
-
         <ImageButton
             android:id="@+id/saveButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:contentDescription="121"
-            android:src="@android:drawable/ic_menu_save" />
+            android:background="@drawable/p6"/>
     </LinearLayout>
 
     <LinearLayout

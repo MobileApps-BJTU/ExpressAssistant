@@ -22,7 +22,7 @@
         android:id="@+id/PackageName"
         android:text="                  Laptop TYPE"
         android:textSize="24dp"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@drawable/p5"
         android:layout_below="@+id/PanelTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -43,7 +43,7 @@
   Deliverer:Tom
   "
         android:textSize="18dp"
-        android:background="@android:color/holo_orange_light"
+        android:background="@drawable/p4"
         android:layout_below="@+id/PackageName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
