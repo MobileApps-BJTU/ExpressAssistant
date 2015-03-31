@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/NameOfPackage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:text="This is text1"
+    android:textSize="28dp">
+</TextView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="This is auxiliary text"
+    android:textSize="16dp"
+    android:id="@+id/DescriptionOfPackage"
+    android:layout_below="@+id/NameOfPackage"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+</TextView>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/DescriptionOfPackage"
+    android:layout_toEndOf="@+id/DescriptionOfPackage"
+    android:id="@+id/toPackageOperationPanel"
+    android:text="Check"
+    android:textSize="20dp"
+    android:layout_marginLeft="80dp"
+/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New CheckBox"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/DescriptionOfPackage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

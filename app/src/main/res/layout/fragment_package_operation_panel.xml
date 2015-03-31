@@ -1,0 +1,117 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team20.java.expressassistant1.PackageOperationPanelTemp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR PACKAGE"
+        android:textSize="24dp"
+        android:id="@+id/PanelTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PackageName"
+        android:text="                  Laptop TYPE"
+        android:textSize="24dp"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@+id/PanelTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="350dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BriefDescription"
+        android:text="                         Brief Description
+  Package name: Laptop TYPE
+  Time of purchase:29th,March 2015
+  Time of delivery:2th,April 2015
+  Price:$1750
+  From:Amazon Express .Ltd,Beijing Branch
+  Status:Being delivered
+  Deliverer:Tom
+  "
+        android:textSize="18dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_below="@+id/PackageName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="350dp"
+        android:height="200dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Info"
+        android:id="@+id/DetailInfo"
+        android:layout_below="@+id/BriefDescription"
+        android:layout_alignLeft="@+id/BriefDescription"
+        android:layout_alignStart="@+id/BriefDescription"
+        android:layout_marginTop="50dp"
+        android:width="170dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package Location"
+        android:id="@+id/PackageLocation"
+        android:width="170dp"
+        android:layout_alignTop="@+id/DetailInfo"
+        android:layout_alignRight="@+id/BriefDescription"
+        android:layout_alignEnd="@+id/BriefDescription" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliverer Information"
+        android:id="@+id/DelivererInformation"
+        android:width="170dp"
+        android:layout_below="@+id/DetailInfo"
+        android:layout_alignLeft="@+id/DetailInfo"
+        android:layout_alignStart="@+id/DetailInfo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abandon Transaction"
+        android:id="@+id/AbandonTransaction"
+        android:width="170dp"
+        android:layout_alignTop="@+id/DelivererInformation"
+        android:layout_alignLeft="@+id/PackageLocation"
+        android:layout_alignStart="@+id/PackageLocation"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Receiving"
+        android:id="@+id/ConfirmReceiving"
+        android:width="170dp"
+        android:layout_below="@+id/DelivererInformation"
+        android:layout_alignLeft="@+id/DelivererInformation"
+        android:layout_alignStart="@+id/DelivererInformation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/Back"
+        android:width="170dp"
+        android:layout_below="@+id/AbandonTransaction"
+        android:layout_alignLeft="@+id/AbandonTransaction"
+        android:layout_alignStart="@+id/AbandonTransaction" />
+
+
+</RelativeLayout>
