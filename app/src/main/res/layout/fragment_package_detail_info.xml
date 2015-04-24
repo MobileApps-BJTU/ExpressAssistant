@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team20.java.expressassistant1.PackageOperationPanelTemp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24dp"
+        android:id="@+id/PanelTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PackageName"
+        android:textSize="24dp"
+
+        android:layout_below="@+id/PanelTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="350dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BriefDescription"
+        android:text="
+                         Detail Information
+      Package name: Laptop
+      Type:Y#########
+      Time of purchase:29th,March 2015
+      Time of delivery:2th,April 2015
+      Estimate arrive time:2th,April 2015
+      Price:$1750
+      Tax:$50
+      From:Amazon Express .Ltd,Beijing Branch
+      Company Address:Building X,Street X,Haidian District
+      Status:Being delivered
+      Deliverer:Tom
+      Phone Number:100-100-1000
+  "
+        android:textSize="18dp"
+        android:layout_below="@+id/PackageName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="350dp"
+        android:height="200dp"
+        android:background="@drawable/p7"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

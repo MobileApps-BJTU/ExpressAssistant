@@ -1,0 +1,22 @@
+Our team members:
+12301029-Zhao Zijian
+12301031-Chen Jixuan
+12301040-Liu Zhenpeng
+12301172-Qin Shaojian
+
+Notification:
+In some cases, the background picture p5 should be deleted from the project if there have some problem with it.
+
+
+
+We have finished the prototype,and the function we implements are as follows:
+We use 4 activities in the prototype,which are MainActivity,HomePageCustomer,PackageInformationList and PackageOperationPanelTemp,transmission can be done through these activities.
+8 XML files which could display different interface are designed,and they have been linked to their appointed java files.
+We use 1 list as well as 1 list adapter in PackageInformationList,it displayed items for users.
+We treat PackageOperationPanelTemp as a platform to launch several fragments,these fragments includes:PackageOperationPanel,sub-fragments PackageDetailInfo,PackageLocation and EndTransaction,4 fragments in total.
+We use 1 listfragment in TransactionHistory,which will show the items in a list in order to help users find their commercial history.
+Apart from that.
+We link location system to the Internet successfully.
+Also,we establish localization in Chinese.
+
+Among all the use case,register,login,Modify user's information,assessment system are not achieved,and for the end transaction function and detail history,we only present its interface.

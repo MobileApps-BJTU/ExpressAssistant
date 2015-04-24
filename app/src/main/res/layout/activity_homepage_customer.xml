@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="200dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CustomerHomePage"
+        android:textSize="36dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="italic"/>
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/Package_Info"
+        android:id="@+id/toPackageInfoList"
+        android:background="#FF6495ED"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/Package_Info_List"
+        android:id="@+id/toTransactionHistory"
+        android:background="#FF6495ED"
+        android:textSize="20dp" />
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/fragmentContainer"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".HomePageCustomer">
+    </FrameLayout>
+</LinearLayout>
+
+
+

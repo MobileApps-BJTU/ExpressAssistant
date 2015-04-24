@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">快递助手</string>
+
+    <string name="hello_world">这是一个临时主界面</string>
+    <string name="action_settings">设置</string>
+    <string name="PackageID">包裹编号</string>
+    <string name="Your_Package">你的包裹</string>
+    <string name="Abandon_Transaction">取消业务</string>
+    <string name="Confirm_Receiving">确认收货</string>
+    <string name="Back">后退</string>
+    <string name="Deliverer_Information">快递员信息</string>
+    <string name="Package_Location">包裹位置</string>
+    <string name="Detail_Info">详细信息</string>
+    <string name="YOUR_PACKAGE">你的包裹</string>
+    <string name="Current_Location">现在位置：北京交通大学</string>
+    <string name="Unfinished_Hint">这里将填充详细历史记录</string>
+    <string name="SURE">确定</string>
+    <string name="Cancel_Hint">您确定要取消该业务吗？</string>
+    <string name="Register">注册</string>
+    <string name="Login">登录</string>
+    <string name="templogin">临时登录</string>
+    <string name="username">用户名  注销</string>
+    <string name="CustomerHomePage">收货人主页</string>
+    <string name="Package_Info">包裹信息</string>
+    <string name="Package_Info_List">包裹信息列表</string>
+    <string name="hint_message">请输入想查询的包裹</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
